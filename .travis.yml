@@ -7,6 +7,7 @@ go:
 install:
   - go get github.com/RainInFall/assert
   - go get github.com/ncw/gotemplate
+  - go get github.com/RainInFall/js-like/array
 
 before_script:
   - go generate
