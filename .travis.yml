@@ -8,7 +8,7 @@ install:
   - go get github.com/RainInFall/assert
   - go get github.com/ncw/gotemplate
 
-after_install:
+before_script:
   - go generate
 
 script: go test
