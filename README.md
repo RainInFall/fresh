@@ -1,6 +1,7 @@
 # fresh
 
 [![build status](https://travis-ci.org/RainInFall/fresh.svg?branch=master)](https://travis-ci.org/RainInFall/fresh.svg?branch=master)
+[![coverage](https://coveralls.io/repos/github/RainInFall/fresh/badge.svg)](https://coveralls.io/repos/github/RainInFall/fresh/badge.svg)
 
 Import same name package from npm
 ## Before Build
@@ -16,5 +17,4 @@ Run:
 go get github.com/RainInFall/assert
 go get github.com/ncw/gotemplate
 go get github.com/RainInFall/js-like/array
-go get golang.org/x/tools/cmd/cover
 ```
