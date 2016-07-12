@@ -3,14 +3,14 @@
 [![build status](https://travis-ci.org/RainInFall/fresh.svg?branch=master)](https://travis-ci.org/RainInFall/fresh.svg?branch=master)
 
 Import same name package from npm
-## Build
+## Before Build
 This package using [gotemplate](https://github.com/ncw/gotemplate),must generate template first.
 
 Run:
 ```sh
 go generate
 ```
-## Test
+## Before Test
 Run:
 ```sh
 go get github.com/RainInFall/assert
