@@ -246,5 +246,4 @@ func TestCheck(t *testing.T) {
 
 		assert.Ok(!Check(req, res))
 	}()
-
 }

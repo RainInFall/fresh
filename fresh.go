@@ -8,6 +8,11 @@ import (
 
 //go:generate gotemplate github.com/RainInFall/js-like/array ArrayString(string)
 
+/*
+Check freshness of req and res headers.
+When the cache is "fresh" true is returned,
+otherwise false is returned to indicate that the cache is now stale.
+*/
 func Check(req, res http.Header) bool {
 	// defaults
 	etagMatches := true

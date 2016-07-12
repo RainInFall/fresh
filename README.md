@@ -16,4 +16,5 @@ Run:
 go get github.com/RainInFall/assert
 go get github.com/ncw/gotemplate
 go get github.com/RainInFall/js-like/array
+go get golang.org/x/tools/cmd/cover
 ```
