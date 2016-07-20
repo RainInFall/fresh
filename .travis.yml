@@ -14,7 +14,7 @@ install:
 before_script:
   - go generate
 
-script: 
-  - go test -v -covermode=count -coverprofile=coverage.out 
+script:
+  - go test -v -covermode=count -coverprofile=coverage.out
 after_script:
-  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci -repotoken $COVERALLS_TOKEN
+  - $HOME/gopath/bin/goveralls -ignore=gotemplate_*.go -coverprofile=coverage.out -service=travis-ci -repotoken $COVERALLS_TOKEN
