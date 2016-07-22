@@ -6,17 +6,17 @@ import (
 	"time"
 )
 
-//go:generate gotemplate github.com/RainInFall/js-like/array ArrayString(string)
+//go:generate js-like array string
 
-func (array ArrayString) Len() int {
+func (array Arraystring) Len() int {
 	return len(array)
 }
 
-func (array ArrayString) Less(i, j int) bool {
+func (array Arraystring) Less(i, j int) bool {
 	return false
 }
 
-func (array ArrayString) Swap(i, j int) {
+func (array Arraystring) Swap(i, j int) {
 	array[i], array[j] = array[j], array[i]
 }
 
@@ -48,8 +48,8 @@ func Check(req, res http.Header) bool {
 
 	// parse if-none-match
 	if len(noneMatch) > 0 {
-		etagMatches = ArrayString(noneMatch).Some(
-			func(match string, _index int, _array ArrayString) bool {
+		etagMatches = Arraystring(noneMatch).Some(
+			func(match string, _index int, _array Arraystring) bool {
 				return match == "*" || match == etag || match == "W/"+etag
 			})
 	}
