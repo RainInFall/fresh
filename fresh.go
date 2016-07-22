@@ -6,20 +6,6 @@ import (
 	"time"
 )
 
-//go:generate js-like array string
-
-func (array Arraystring) Len() int {
-	return len(array)
-}
-
-func (array Arraystring) Less(i, j int) bool {
-	return false
-}
-
-func (array Arraystring) Swap(i, j int) {
-	array[i], array[j] = array[j], array[i]
-}
-
 /*
 Check freshness of req and res headers.
 When the cache is "fresh" true is returned,
